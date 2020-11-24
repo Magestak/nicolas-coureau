@@ -8,9 +8,61 @@
 }
 /********** Wrapper et génériques **********/
 body {
-    background-image: url("img/back-cover.jpg");
+
+}
+img {
+    width: 100%;
 }
 #wrapper {
     margin: 0 auto;
-    width: 1200px;
+    max-width: 2000px;
+    color: white;
+    background: linear-gradient(to right,  rgb(32, 34, 83), rgb(138, 21, 18));
+}
+/********** Header **********/
+#menu {
+    background: linear-gradient(to right,  rgb(32, 34, 83), rgb(138, 21, 18));
+}
+#main-nav li:hover {
+    background: rgb(32, 34, 83);
+}
+/*
+#name:hover {
+    background: rgb(138, 21, 18);
+}*/
+#title {
+    margin: 0 auto;
+    padding-top: 150px;
+    max-width: 1280px;
+    height: 400px;
+}
+/********** A propos **********/
+#about {
+    background: #cccccc;
+    color: black;
+}
+#main-about {
+    margin: 0 auto;
+    max-width: 1280px;
+    height: 400px;
+}
+/********** Compétences/Prestations **********/
+#skills-services {
+
+}
+#main-skills-services {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+/********** Réalisations **********/
+#achievements {
+    background: #cccccc;
+    color: black;
+}
+#main-achievements {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+figcaption {
+    padding-top: 0;
 }

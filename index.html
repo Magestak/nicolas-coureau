@@ -6,28 +6,32 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Nicolas Coureau - Développeur Frontend</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+          integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 <body>
 <!-- Wrapper -->
 <div id="wrapper">
-    <header class="header">
-        <div id="menu" class="w3-container"> <!-- TODO: Voir si possible de faire un canvas pour le gradient comme pour la section de dessous -->
+    <header id="header">
+        <div id="menu" class="w3-container w3-top">
             <!-- Nom dans la barre de menu -->
             <div id="name" class="w3-left">
                 <a href="index.html">
-                    <h2>Nicolas Coureau</h2>
-                    <h3>Développeur Frontend</h3>
+                    <div class="w3-leftbar">
+                        <h2 class="w3-margin-left">Nicolas Coureau</h2>
+                        <h5 class="w3-margin-left">Développeur Frontend</h5>
+                    </div>
                 </a>
             </div>
             <!-- Menu -->
             <nav id="main-nav" class="w3-right">
-                <ul class="w3-bar">
-                    <li class="w3-bar-item"><a href="#">Accueil</a></li>
-                    <li class="w3-bar-item"><a href="#about">A propos</a></li>
-                    <li class="w3-bar-item"><a href="#skills-services">Compétences <br>Prestations</a></li>
-                    <li class="w3-bar-item"><a href="#achievements">Réalisations</a></li>
-                    <li class="w3-bar-item"><a href="#contact">Contact</a></li>
-                    <li class="w3-bar-item"><a href="#">CV</a></li>
+                <ul class="w3-bar w3-margin-top">
+                    <li class="w3-bar-item w3-center w3-rightbar"><a href="#"><i class="fas fa-home"></i></a></li>
+                    <li class="w3-bar-item w3-center w3-rightbar"><a href="#about">A propos</a></li>
+                    <li class="w3-bar-item w3-center w3-rightbar"><a href="#skills-services">Compétences/Prestations</a></li>
+                    <li class="w3-bar-item w3-center w3-rightbar"><a href="#achievements">Réalisations</a></li>
+                    <li class="w3-bar-item w3-center w3-rightbar"><a href="#contact">Contact</a></li>
+                    <li class="w3-bar-item w3-center"><a href="#">CV</a></li>
                 </ul>
             </nav>
         </div>
@@ -38,30 +42,201 @@
     </header>
     <main>
         <!-- Section à propos -->
-        <section id="about">
-            <p>
-                Après plus de 20 ans passés dans le commerce de la distribution, mais passionné depuis des années par la
-                programmation informatique, j'ai décidé d'assouvir ma passion en faisant de la programmation mon métier.
-            </p>
-            <p>
-                Fort de mon expérience commerciale, j'accorde dans mon nouveau métier, une grande importance à l'expérience utilisateur,
-                et je cherche donc à proposer des interfaces utilisateurs les plus adaptées à leurs besoins.
-            </p>
-            <p>
-                Travailleur passionné, rigoureux, organisé, j'ai à cœur de travailler dans le respect des normes W3C,
-                et dans le respect des bonnes pratiques pour le référencement Web.
-                Implémenter une solution ayant été testée entièrement et répondant parfaitement aux besoins des utilisateurs,
-                adaptée à tous les supports média (mobile, tablette et ordinateur) est mon leitmotiv.
-            </p>
+        <section id="about" class="w3-container">
+            <div id="main-about">
+                <h3>A propos de moi</h3>
+                <p>
+                    Après plus de 20 ans passés dans le commerce de la distribution, mais passionné depuis des années par la
+                    programmation informatique, j'ai décidé d'assouvir ma passion en faisant de la programmation mon métier.
+                </p>
+                <p>
+                    Fort de mon expérience commerciale, j'accorde dans mon nouveau métier, une grande importance à l'expérience utilisateur,
+                    et je cherche donc à proposer des interfaces utilisateurs les plus adaptées à leurs besoins.
+                </p>
+                <p>
+                    Travailleur passionné, rigoureux, organisé, j'ai à cœur de travailler dans le respect des normes W3C,
+                    et dans le respect des bonnes pratiques pour le référencement Web.
+                    Implémenter une solution ayant été testée entièrement et répondant parfaitement aux besoins des utilisateurs,
+                    adaptée à tous les supports média (mobile, tablette et ordinateur) est mon leitmotiv.
+                </p>
+            </div>
         </section>
 
         <!-- Section Compétences-prestations -->
-        <section id="skills-services">
-
+        <section id="skills-services" class="w3-container w3-row">
+            <div id="main-skills-services">
+                <h3>Compétences / Prestations</h3>
+                <div id="hard-skills" class="w3-third">
+                    <h3>Mes Hard-skills</h3>
+                    <ul>
+                        <li>HTML5/CSS3</li>
+                        <li>Javascript/jQuery</li>
+                        <li>WordPress</li>
+                        <li>Bootstrap</li>
+                        <li>W3-CSS</li>
+                        <li>Référencement SEO/SEA/SMO</li>
+                    </ul>
+                </div>
+                <div id="soft-skills" class="w3-third">
+                    <h3>Mes Soft-skills</h3>
+                    <ul>
+                        <li>Motivation</li>
+                        <li>Détermination</li>
+                        <li>Capacité de concentration</li>
+                        <li>Créativité</li>
+                        <li>Persuation</li>
+                        <li>Collaboration</li>
+                        <li>Adaptabilité</li>
+                        <li>Esprit d'entreprendre</li>
+                        <li>Intelligence émotionnelle</li>
+                    </ul>
+                </div>
+                <div id="services" class="w3-third">
+                    <h3>Mes Prestations</h3>
+                    <ul>
+                        <li>
+                            <p>Création de sites vitrines / Boutique en ligne (WordPress) / Applications web</p>
+                            <ul>
+                                <li>From scratch</li>
+                                <li>Utilisation de CMS (WordPress)</li>
+                                <li>Intégration de maquettes</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>Refonte de sites web</p>
+                            <ul>
+                                <li>Mise aux normes W3C</li>
+                                <li>Refonte design</li>
+                                <li>Responsive design</li>
+                            </ul>
+                        </li>
+                        <li>Optimisation référencement (SEO/SEA/SMO)</li>
+                        <li>
+                            <p>Maintenance</p>
+                            <ul>
+                                <li>Support technique</li>
+                                <li>Mises à jour</li>
+                                <li>Correction bugs</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <!-- Section réalisations -->
-        <section id="achievements">
+        <section id="achievements" class="w3-container">
+            <div id="main-achievements">
+                <h3 class="w3-center">Mes réalisations</h3>
+                <div class="w3-row">
+                    <div class="w3-third">
+                        <figure class="w3-container w3-white w3-padding-16">
+                            <img src="img/la-fourchette-min.png" alt="Site La Fourchette">
+                            <figcaption>
+                                <h5>HTML5/CSS3</h5>
+                                <p>Site vitrine fictif pour un restaurant</p><br>
+                                <a href="http://la-fourchette.nicolas-coureau.fr" class="w3-button w3-black">Voir le site</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="w3-third">
+                        <figure class="w3-container w3-white w3-padding-16">
+                            <img src="img/institut-recherche-environnement-min.png" alt="Site Institut Recherche Environnement">
+                            <figcaption>
+                                <h5>HTML5/CSS3</h5>
+                                <p>Site vitrine fictif pour un institut de recherche</p>
+                                <a href="http://institut-recherche-environnement.nicolas-coureau.fr" class="w3-button w3-black">Voir le site</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="w3-third">
+                        <figure class="w3-container w3-white w3-padding-16">
+                            <img src="img/le-globule-min.png" alt="Site Le Globule">
+                            <figcaption>
+                                <h5>HTML5/CSS3</h5>
+                                <p>Site fictif pour le travail de mise en page</p><br>
+                                <a href="http://le-globule.nicolas-coureau.fr" class="w3-button w3-black">Voir le site</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="w3-row">
+                    <div class="w3-third">
+                        <figure class="w3-container w3-white w3-padding-16">
+                            <img src="img/le-site-web-min.png" alt="Site Le Site Web">
+                            <figcaption>
+                                <h5>HTML5/CSS3</h5>
+                                <p>Site fictif pour le travail de mise en page</p><br>
+                                <a href="http://le-site-web.nicolas-coureau.fr" class="w3-button w3-black">Voir le site</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="w3-third">
+                        <figure class="w3-container w3-white w3-padding-16">
+                            <img src="img/le-poussin-min.png" alt="Site Le Poussin">
+                            <figcaption>
+                                <h5>HTML5/CSS3</h5>
+                                <p>Site fictif pour la mise en page responsive</p>
+                                <a href="http://le-poussin.nicolas-coureau.fr" class="w3-button w3-black">Voir le site</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="w3-third">
+                        <figure class="w3-container w3-white w3-padding-16">
+                            <img src="img/chalets-et-caviar-min.png" alt="Site Agence chalets et caviar">
+                            <figcaption>
+                                <h5>WordPress</h5>
+                                <p>Site vitrine fictif d'une agence de locations/ventes de chalets de luxe</p>
+                                <a href="https://agence-chaletsetcaviar.com" class="w3-button w3-black">Voir le site</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="w3-row">
+                    <div class="w3-third">
+                        <figure class="w3-container w3-white w3-padding-16">
+                            <img src="img/les-films-de-plein-air-min.png" alt="Site Les films de plein air">
+                            <figcaption>
+                                <h5>HTML5/CSS3/W3-CSS</h5>
+                                <p>Site vitrine fictif d'une association pour un festival de films de plein air</p>
+                                <a href="http://lesfilmsdepleinair.nicolas-coureau.fr/" class="w3-button w3-black">Voir le site</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="w3-third">
+                        <figure class="w3-container w3-white w3-padding-16">
+                            <img src="img/un-generateur-de-citations-min.png" alt="Site Un générateur de citations">
+                            <figcaption>
+                                <h5>HTML5/CSS3/Javascript</h5>
+                                <p>Générateur de citations aléatoires à partir de différents morceaux de phrases</p>
+                                <a href="http://un-generateur-de-citations.nicolas-coureau.fr" class="w3-button w3-black">Voir le site</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="w3-third">
+                        <figure class="w3-container w3-white w3-padding-16">
+                            <img src="img/jeu-plateau-min.png" alt="Site Jeu de plateau">
+                            <figcaption>
+                                <h5>HTML5/CSS3/Javascript/jQuery</h5>
+                                <p>Jeu de plateau au tour par tour en javascript</p>
+                                <a href="http://jeu-plateau.nicolas-coureau.fr" class="w3-button w3-black">Voir le site</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="w3-row">
+                    <div class="w3-third">
+                        <figure class="w3-container w3-white w3-padding-16">
+                            <img src="img/avis-restaurants-min.png" alt="Site Avis de restaurants">
+                            <figcaption>
+                                <h5>HTML5/CSS3/Javascript/API</h5>
+                                <p>Site d'avis de restaurants géolocalisés à l'aide d'API externes</p>
+                                <a href="http://avis-restaurants.nicolas-coureau.fr" class="w3-button w3-black">Voir le site</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
 
         </section>
 
