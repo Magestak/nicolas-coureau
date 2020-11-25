@@ -6,10 +6,7 @@
     list-style: none;
     text-decoration: none;
 }
-/********** Wrapper et génériques **********/
-body {
-
-}
+/********** Wrapper and generics **********/
 img {
     width: 100%;
 }
@@ -26,8 +23,11 @@ img {
 #main-nav li:hover {
     background: rgb(32, 34, 83);
 }
+#mySidebar {
+    background: linear-gradient(to right,  rgb(32, 34, 83), rgb(138, 21, 18));
+}
 /*
-#name:hover {
+#my-name:hover {
     background: rgb(138, 21, 18);
 }*/
 #title {
@@ -36,26 +36,50 @@ img {
     max-width: 1280px;
     height: 400px;
 }
-/********** A propos **********/
+/********** About **********/
 #about {
+    padding-top: 30px;
+    padding-bottom: 80px;
     background: #cccccc;
     color: black;
 }
 #main-about {
     margin: 0 auto;
     max-width: 1280px;
-    height: 400px;
 }
-/********** Compétences/Prestations **********/
+.content-about {
+    font-size: 16px;
+}
+/********** Skills and services **********/
 #skills-services {
-
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+#skills-services h3 {
+    font-size: 28px;
 }
 #main-skills-services {
     margin: 0 auto;
     max-width: 1280px;
 }
-/********** Réalisations **********/
+#main-skills-services h2 {
+    margin-bottom: 30px;
+}
+#main-skills-services li {
+    font-size: 16px;
+    padding-top: 5px;
+}
+#hard-skills, #soft-skills, #services {
+    padding-left: 40px;
+}
+.pl {
+    padding-left: 40px;
+}
+
+/********** Achievements **********/
 #achievements {
+    padding-top: 40px;
+    padding-bottom: 70px;
     background: #cccccc;
     color: black;
 }
@@ -63,6 +87,65 @@ img {
     margin: 0 auto;
     max-width: 1280px;
 }
+#main-achievements figure a {
+    margin-top: 10px;
+}
 figcaption {
     padding-top: 0;
+}
+/********** Contact ***********/
+#contact {
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+#main-contact {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+#main-contact h2 {
+    margin-bottom: 30px;
+}
+#form-contact {
+    margin: 0 60px;
+    padding: 0 20px 20px 20px;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+#form-contact input, textarea {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+#form-contact button {
+    margin-top: 15px;
+    padding: 5px 20px;
+}
+#form-contact h3, #contact-details h3 {
+    font-size: 28px;
+}
+#contact-details {
+    padding: 0 60px;
+}
+#main-contact-details {
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 0 20px 20px 20px;
+    margin-top: 100px;
+}
+.w100 {
+    width: 100%;
+}
+#social-network-icons a:hover {
+    color: rgb(32, 34, 83);
+}
+/********** Footer **********/
+#main-footer a {
+    text-decoration: underline;
+}
+/********** legal-notices **********/
+#legal-notices {
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 1280px;
 }

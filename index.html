@@ -14,8 +14,8 @@
 <div id="wrapper">
     <header id="header">
         <div id="menu" class="w3-container w3-top">
-            <!-- Nom dans la barre de menu -->
-            <div id="name" class="w3-left">
+            <!-- Name in the menu bar -->
+            <div id="my-name" class="w3-left">
                 <a href="index.html">
                     <div class="w3-leftbar">
                         <h2 class="w3-margin-left">Nicolas Coureau</h2>
@@ -24,7 +24,7 @@
                 </a>
             </div>
             <!-- Menu -->
-            <nav id="main-nav" class="w3-right">
+            <nav id="main-nav" class="w3-right w3-hide-small w3-hide-medium">
                 <ul class="w3-bar w3-margin-top">
                     <li class="w3-bar-item w3-center w3-rightbar"><a href="#"><i class="fas fa-home"></i></a></li>
                     <li class="w3-bar-item w3-center w3-rightbar"><a href="#about">A propos</a></li>
@@ -34,26 +34,41 @@
                     <li class="w3-bar-item w3-center"><a href="#">CV</a></li>
                 </ul>
             </nav>
+            <!-- Hide right-floated links on small and medium screens and replace them with a menu icon -->
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
+                <i class="fa fa-bars w3-xxxlarge"></i>
+            </a>
         </div>
+
+        <!-- Sidebar on small and medium screens when clicking the menu icon -->
+        <nav class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Fermer &times;</a>
+            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge"><i class="fas fa-home"></i></a>
+            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">A propos</a>
+            <a href="#skills-services" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">Compétences/Prestations</a>
+            <a href="#achievements" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">Réalisations</a>
+            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">Contact</a>
+        </nav>
+
         <div id="title" class="w3-center">
-            <h1>Nicolas Coureau</h1>
+            <h1 class="w3-xxxlarge">Nicolas Coureau</h1>
             <h2>Développeur Web/Application Frontend</h2>
         </div>
     </header>
     <main>
-        <!-- Section à propos -->
+        <!-- About section -->
         <section id="about" class="w3-container">
             <div id="main-about">
-                <h3>A propos de moi</h3>
-                <p>
+                <h2 class="w3-center w3-xxlarge w3-padding-24">Qui suis-je ?</h2>
+                <p class="content-about">
                     Après plus de 20 ans passés dans le commerce de la distribution, mais passionné depuis des années par la
                     programmation informatique, j'ai décidé d'assouvir ma passion en faisant de la programmation mon métier.
                 </p>
-                <p>
+                <p class="content-about">
                     Fort de mon expérience commerciale, j'accorde dans mon nouveau métier, une grande importance à l'expérience utilisateur,
                     et je cherche donc à proposer des interfaces utilisateurs les plus adaptées à leurs besoins.
                 </p>
-                <p>
+                <p class="content-about">
                     Travailleur passionné, rigoureux, organisé, j'ai à cœur de travailler dans le respect des normes W3C,
                     et dans le respect des bonnes pratiques pour le référencement Web.
                     Implémenter une solution ayant été testée entièrement et répondant parfaitement aux besoins des utilisateurs,
@@ -62,72 +77,75 @@
             </div>
         </section>
 
-        <!-- Section Compétences-prestations -->
+        <!-- Section Skills and services -->
         <section id="skills-services" class="w3-container w3-row">
             <div id="main-skills-services">
-                <h3>Compétences / Prestations</h3>
-                <div id="hard-skills" class="w3-third">
-                    <h3>Mes Hard-skills</h3>
-                    <ul>
-                        <li>HTML5/CSS3</li>
-                        <li>Javascript/jQuery</li>
-                        <li>WordPress</li>
-                        <li>Bootstrap</li>
-                        <li>W3-CSS</li>
-                        <li>Référencement SEO/SEA/SMO</li>
-                    </ul>
+                <h2 class="w3-center w3-xxlarge w3-padding-16">Compétences / Prestations</h2>
+                <div id="hard-skills" class="w3-container w3-third">
+                    <div class="w3-padding w3-border w3-border-white w3-round-large">
+                        <h3 class="w3-center">Hard-skills</h3>
+                        <ul>
+                            <li>HTML5/CSS3</li>
+                            <li>Javascript/jQuery</li>
+                            <li>WordPress</li>
+                            <li>Bootstrap</li>
+                            <li>W3-CSS</li>
+                            <li>Référencement SEO/SEA/SMO</li>
+                        </ul>
+                    </div>
                 </div>
-                <div id="soft-skills" class="w3-third">
-                    <h3>Mes Soft-skills</h3>
-                    <ul>
-                        <li>Motivation</li>
-                        <li>Détermination</li>
-                        <li>Capacité de concentration</li>
-                        <li>Créativité</li>
-                        <li>Persuation</li>
-                        <li>Collaboration</li>
-                        <li>Adaptabilité</li>
-                        <li>Esprit d'entreprendre</li>
-                        <li>Intelligence émotionnelle</li>
-                    </ul>
+                <div id="soft-skills" class="w3-container w3-third">
+                    <div class="w3-padding w3-border w3-border-white w3-round-large">
+                        <h3 class="w3-center">Soft-skills</h3>
+                        <ul>
+                            <li>Motivation</li>
+                            <li>Détermination</li>
+                            <li>Capacité de concentration</li>
+                            <li>Créativité</li>
+                            <li>Persuation</li>
+                            <li>Collaboration</li>
+                            <li>Adaptabilité</li>
+                            <li>Esprit d'entreprendre</li>
+                            <li>Intelligence émotionnelle</li>
+                        </ul>
+                    </div>
                 </div>
-                <div id="services" class="w3-third">
-                    <h3>Mes Prestations</h3>
-                    <ul>
-                        <li>
-                            <p>Création de sites vitrines / Boutique en ligne (WordPress) / Applications web</p>
-                            <ul>
-                                <li>From scratch</li>
-                                <li>Utilisation de CMS (WordPress)</li>
-                                <li>Intégration de maquettes</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <p>Refonte de sites web</p>
-                            <ul>
-                                <li>Mise aux normes W3C</li>
-                                <li>Refonte design</li>
-                                <li>Responsive design</li>
-                            </ul>
-                        </li>
-                        <li>Optimisation référencement (SEO/SEA/SMO)</li>
-                        <li>
-                            <p>Maintenance</p>
-                            <ul>
-                                <li>Support technique</li>
-                                <li>Mises à jour</li>
-                                <li>Correction bugs</li>
-                            </ul>
-                        </li>
-                    </ul>
+                <div id="services" class="w3-container w3-third">
+                    <div class="w3-padding w3-border w3-border-white w3-round-large">
+                        <h3 class="w3-center">Prestations (exemples)</h3>
+                        <ul>
+                            <li>Création de sites vitrines / Boutique en ligne (WordPress) / Applications web:
+                                <ul>
+                                    <li class="pl">From scratch</li>
+                                    <li class="pl">Utilisation de CMS (WordPress)</li>
+                                    <li class="pl">Intégration de maquettes</li>
+                                </ul>
+                            </li>
+                            <li>Refonte de sites web:
+                                <ul>
+                                    <li class="pl">Mise aux normes W3C</li>
+                                    <li class="pl">Refonte design</li>
+                                    <li class="pl">Responsive design</li>
+                                </ul>
+                            </li>
+                            <li>Optimisation référencement (SEO/SEA/SMO)</li>
+                            <li>Maintenance sur réalisations:
+                                <ul>
+                                    <li class="pl">Support technique</li>
+                                    <li class="pl">Mises à jour</li>
+                                    <li class="pl">Correction bugs</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section réalisations -->
+        <!-- Achievements section -->
         <section id="achievements" class="w3-container">
             <div id="main-achievements">
-                <h3 class="w3-center">Mes réalisations</h3>
+                <h2 class="w3-center w3-xxlarge w3-padding-16">Mes réalisations</h2>
                 <div class="w3-row">
                     <div class="w3-third">
                         <figure class="w3-container w3-white w3-padding-16">
@@ -240,16 +258,57 @@
 
         </section>
 
-        <!-- Section contact -->
+        <!-- Contact section -->
         <section id="contact">
+            <div id="main-contact" class="w3-container">
+                <h2 class="w3-center w3-xxlarge w3-padding-16">Contact</h2>
+                <div class="w3-half">
+                    <form id="form-contact" action="https://formspree.io/f/xoqpnjll" method="POST">
+                        <h3 class="w3-center">Demande de contact</h3>
+                        <label class="w3-large">Votre email: <br>
+                            <input class="w3-input w3-round-large" type="text" name="_replyto" placeholder="Email">
+                        </label>
+                        <label class="w3-large">Votre message: <br>
+                            <textarea class="w3-input w3-round-large" name="message" placeholder="Votre message ici..."></textarea>
+                        </label>
+                        <div>
+                            <label class="w3-large" for="name">Votre nom: <br></label>
+                            <input class="w3-input w3-round-large" id="name" type="text" name="name" placeholder="Votre nom">
+                        </div>
+                        <button class="w3-large w3-round-large w3-button w3-white w3-hover-grayscale" type="submit">Envoyer</button>
+                    </form>
+                </div>
+                <div id="contact-details" class="w3-half">
+                    <div id="main-contact-details">
+                        <h3 class="w3-center">Coordonnées</h3>
+                        <div class="w100 w3-large w3-margin-bottom">
+                            <i class="fas fa-map-marker-alt"></i> 40100 Dax, Landes, Nouvelle Aquitaine, France
+                        </div>
+                        <div class="w100 w3-large w3-margin-bottom">
+                            <i class="fas fa-phone-alt"></i> +33 6 50 51 35 50
+                        </div>
+                        <div class="w100 w3-large w3-margin-bottom">
+                            <i class="fas fa-envelope"></i> contact@nicolas-coureau.fr
+                        </div>
+                        <div id="social-network-icons" class="w100 w3-xlarge w3-center">
+                            <a href="https://www.linkedin.com/in/nicolas-coureau-a4a3a618b/"><i class="fab fa-linkedin w3-margin-right"></i></a>
+                            <a href="#"><i class="fab fa-facebook-square w3-margin-right"></i></a>
+                            <a href="https://github.com/Magestak"><i class="fab fa-github-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </section>
     </main>
 
-    <footer>
-
+    <!-- Footer -->
+    <footer id="main-footer" class="w3-container w3-black w3-padding-16">
+        <div class="w3-stretch w3-center">
+            <p class="w3-small">Copyright 2020 - <a href="html/mentions-legales.html">Mentions légales</a> - Site réalisé par
+                <a href="https://www.nicolas-coureau.fr/">Nicolas Coureau</a></p>
+        </div>
     </footer>
-
 
 
 </div>
