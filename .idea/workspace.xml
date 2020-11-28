@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e31b209-599c-4336-9b3e-01470def0cb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/html/mentions-legales.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/mentions-legales.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/mentions-legales.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
     </list>
@@ -62,7 +62,9 @@
       <option name="presentableId" value="Default" />
       <updated>1606062777033</updated>
       <workItem from="1606062778076" duration="20536000" />
-      <workItem from="1606087512108" duration="97841000" />
+      <workItem from="1606087512108" duration="99502000" />
+      <workItem from="1606384364058" duration="24725000" />
+      <workItem from="1606497431717" duration="16713000" />
     </task>
     <servers />
   </component>
@@ -79,6 +81,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="586" y="198" key="#Inspections" timestamp="1606087348176">

@@ -135,6 +135,9 @@ figcaption {
 .w100 {
     width: 100%;
 }
+.mailto:hover {
+    color: rgb(32, 34, 83);
+}
 #social-network-icons a:hover {
     color: rgb(32, 34, 83);
 }

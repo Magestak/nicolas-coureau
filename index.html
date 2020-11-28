@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
           integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="js/index.js" defer></script>
 </head>
 <body>
 <!-- Wrapper -->
@@ -50,9 +52,11 @@
             <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">Contact</a>
         </nav>
 
-        <div id="title" class="w3-center">
-            <h1 class="w3-xxxlarge">Nicolas Coureau</h1>
-            <h2>Développeur Web/Application Frontend</h2>
+        <div id="title">
+            <div id="main-title" class="w3-center ml15">
+                <h1 id="developer-name" class="w3-xxxlarge word">Nicolas Coureau</h1>
+                <h2 id="developer-function" class="word">Développeur Web/Application Frontend</h2>
+            </div>
         </div>
     </header>
     <main>
@@ -149,7 +153,7 @@
                 <div class="w3-row">
                     <div class="w3-third">
                         <figure class="w3-container w3-white w3-padding-16">
-                            <img src="img/la-fourchette-min.png" alt="Site La Fourchette">
+                            <img id="img-1" src="img/la-fourchette-min.png" alt="Site La Fourchette">
                             <figcaption>
                                 <h5>HTML5/CSS3</h5>
                                 <p>Site vitrine fictif pour un restaurant</p><br>
@@ -159,7 +163,7 @@
                     </div>
                     <div class="w3-third">
                         <figure class="w3-container w3-white w3-padding-16">
-                            <img src="img/institut-recherche-environnement-min.png" alt="Site Institut Recherche Environnement">
+                            <img id="img-2"  src="img/institut-recherche-environnement-min.png" alt="Site Institut Recherche Environnement">
                             <figcaption>
                                 <h5>HTML5/CSS3</h5>
                                 <p>Site vitrine fictif pour un institut de recherche</p>
@@ -169,7 +173,7 @@
                     </div>
                     <div class="w3-third">
                         <figure class="w3-container w3-white w3-padding-16">
-                            <img src="img/le-globule-min.png" alt="Site Le Globule">
+                            <img id="img-3"  src="img/le-globule-min.png" alt="Site Le Globule">
                             <figcaption>
                                 <h5>HTML5/CSS3</h5>
                                 <p>Site fictif pour le travail de mise en page</p><br>
@@ -181,7 +185,7 @@
                 <div class="w3-row">
                     <div class="w3-third">
                         <figure class="w3-container w3-white w3-padding-16">
-                            <img src="img/le-site-web-min.png" alt="Site Le Site Web">
+                            <img id="img-4"  src="img/le-site-web-min.png" alt="Site Le Site Web">
                             <figcaption>
                                 <h5>HTML5/CSS3</h5>
                                 <p>Site fictif pour le travail de mise en page</p><br>
@@ -191,7 +195,7 @@
                     </div>
                     <div class="w3-third">
                         <figure class="w3-container w3-white w3-padding-16">
-                            <img src="img/le-poussin-min.png" alt="Site Le Poussin">
+                            <img id="img-5"  src="img/le-poussin-min.png" alt="Site Le Poussin">
                             <figcaption>
                                 <h5>HTML5/CSS3</h5>
                                 <p>Site fictif pour la mise en page responsive</p>
@@ -201,7 +205,7 @@
                     </div>
                     <div class="w3-third">
                         <figure class="w3-container w3-white w3-padding-16">
-                            <img src="img/chalets-et-caviar-min.png" alt="Site Agence chalets et caviar">
+                            <img id="img-6"  src="img/chalets-et-caviar-min.png" alt="Site Agence chalets et caviar">
                             <figcaption>
                                 <h5>WordPress</h5>
                                 <p>Site vitrine fictif d'une agence de locations/ventes de chalets de luxe</p>
@@ -213,7 +217,7 @@
                 <div class="w3-row">
                     <div class="w3-third">
                         <figure class="w3-container w3-white w3-padding-16">
-                            <img src="img/les-films-de-plein-air-min.png" alt="Site Les films de plein air">
+                            <img id="img-7"  src="img/les-films-de-plein-air-min.png" alt="Site Les films de plein air">
                             <figcaption>
                                 <h5>HTML5/CSS3/W3-CSS</h5>
                                 <p>Site vitrine fictif d'une association pour un festival de films de plein air</p>
@@ -223,7 +227,7 @@
                     </div>
                     <div class="w3-third">
                         <figure class="w3-container w3-white w3-padding-16">
-                            <img src="img/un-generateur-de-citations-min.png" alt="Site Un générateur de citations">
+                            <img id="img-8"  src="img/un-generateur-de-citations-min.png" alt="Site Un générateur de citations">
                             <figcaption>
                                 <h5>HTML5/CSS3/Javascript</h5>
                                 <p>Générateur de citations aléatoires à partir de différents morceaux de phrases</p>
@@ -233,7 +237,7 @@
                     </div>
                     <div class="w3-third">
                         <figure class="w3-container w3-white w3-padding-16">
-                            <img src="img/jeu-plateau-min.png" alt="Site Jeu de plateau">
+                            <img id="img-9"  src="img/jeu-plateau-min.png" alt="Site Jeu de plateau">
                             <figcaption>
                                 <h5>HTML5/CSS3/Javascript/jQuery</h5>
                                 <p>Jeu de plateau au tour par tour en javascript</p>
@@ -245,10 +249,10 @@
                 <div class="w3-row">
                     <div class="w3-third">
                         <figure class="w3-container w3-white w3-padding-16">
-                            <img src="img/avis-restaurants-min.png" alt="Site Avis de restaurants">
+                            <img id="img-10"  src="img/avis-restaurants-min.png" alt="Site Avis de restaurants">
                             <figcaption>
                                 <h5>HTML5/CSS3/Javascript/API</h5>
-                                <p>Site d'avis de restaurants géolocalisés à l'aide d'API externes</p>
+                                <p>Site d'avis de restaurants géolocalisés, à l'aide d'API externes</p>
                                 <a href="http://avis-restaurants.nicolas-coureau.fr" class="w3-button w3-black">Voir le site</a>
                             </figcaption>
                         </figure>
@@ -288,7 +292,7 @@
                             <i class="fas fa-phone-alt"></i> +33 6 50 51 35 50
                         </div>
                         <div class="w100 w3-large w3-margin-bottom">
-                            <i class="fas fa-envelope"></i> contact@nicolas-coureau.fr
+                            <i class="fas fa-envelope"></i> <a href="mailto:contact@nicolas-coureau.fr" class="mailto">contact@nicolas-coureau.fr</a>
                         </div>
                         <div id="social-network-icons" class="w100 w3-xlarge w3-center">
                             <a href="https://www.linkedin.com/in/nicolas-coureau-a4a3a618b/"><i class="fab fa-linkedin w3-margin-right"></i></a>
@@ -300,6 +304,7 @@
             </div>
 
         </section>
+
     </main>
 
     <!-- Footer -->
@@ -312,8 +317,6 @@
 
 
 </div>
-
-<script src="js/index.js"></script>
 
 </body>
 </html>
