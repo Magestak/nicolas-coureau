@@ -9,6 +9,11 @@ function w3_open() {
         mySidebar.style.display = 'block';
     }
 }
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
 // animation on the title
 anime.timeline({loop: true})
     .add({
@@ -30,19 +35,14 @@ anime.timeline({loop: true})
 function rotate(event) {
     anime({
         targets: event.target,
-        //loop: true,
         rotate: '1turn',
+        duration: 5000
     });
 }
 
-document.getElementById('img-1').addEventListener('mouseover', rotate);
-document.getElementById('img-2').addEventListener('mouseover', rotate);
-document.getElementById('img-3').addEventListener('mouseover', rotate);
-document.getElementById('img-4').addEventListener('mouseover', rotate);
-document.getElementById('img-5').addEventListener('mouseover', rotate);
-document.getElementById('img-6').addEventListener('mouseover', rotate);
-document.getElementById('img-7').addEventListener('mouseover', rotate);
-document.getElementById('img-8').addEventListener('mouseover', rotate);
-document.getElementById('img-9').addEventListener('mouseover', rotate);
-document.getElementById('img-10').addEventListener('mouseover', rotate);
+for (let i = 1; i <= 10; i++) {
+    document.getElementById('img-' + [i]).addEventListener('mouseover', rotate);
+}
+
+
 

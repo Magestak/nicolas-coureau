@@ -26,10 +26,10 @@ img {
 #mySidebar {
     background: linear-gradient(to right,  rgb(32, 34, 83), rgb(138, 21, 18));
 }
-/*
-#my-name:hover {
+
+#main-my-name:hover {
     background: rgb(138, 21, 18);
-}*/
+}
 #title {
     margin: 0 auto;
     padding-top: 150px;
@@ -55,9 +55,6 @@ img {
     padding-top: 40px;
     padding-bottom: 70px;
 }
-#skills-services h3 {
-    font-size: 28px;
-}
 #main-skills-services {
     margin: 0 auto;
     max-width: 1280px;
@@ -68,9 +65,6 @@ img {
 #main-skills-services li {
     font-size: 16px;
     padding-top: 5px;
-}
-#hard-skills, #soft-skills, #services {
-    padding-left: 40px;
 }
 .pl {
     padding-left: 40px;
@@ -90,6 +84,9 @@ img {
 #main-achievements figure a {
     margin-top: 10px;
 }
+figure {
+    margin: 20px 10px;
+}
 figcaption {
     padding-top: 0;
 }
@@ -106,7 +103,6 @@ figcaption {
     margin-bottom: 30px;
 }
 #form-contact {
-    margin: 0 60px;
     padding: 0 20px 20px 20px;
     border: 1px solid white;
     border-radius: 8px;
@@ -119,12 +115,6 @@ figcaption {
 #form-contact button {
     margin-top: 15px;
     padding: 5px 20px;
-}
-#form-contact h3, #contact-details h3 {
-    font-size: 28px;
-}
-#contact-details {
-    padding: 0 60px;
 }
 #main-contact-details {
     border: 1px solid white;
@@ -151,4 +141,75 @@ figcaption {
     padding-top: 50px;
     padding-bottom: 50px;
     max-width: 1280px;
+}
+
+/********** Media queries **********/
+/********** Small **********/
+@media screen and (max-width: 600px) {
+    #main-my-name h2 {
+        font-size: 18px;
+    }
+    #main-my-name h5 {
+        font-size: 16px;
+    }
+    #developer-name {
+        font-size: 26px;
+    }
+    #developer-function {
+        font-size: 22px;
+    }
+    #main-about h2, #main-skills-services h2, #main-achievements h2, #main-contact h2 {
+        font-size: 28px;
+    }
+    #skills-services h3 {
+        font-size: 24px;
+    }
+    #form-contact h3, #contact-details h3 {
+        font-size: 24px;
+    }
+    #form-contact {
+        margin: 0 20px;
+    }
+    #contact-details {
+        padding: 0 20px;
+    }
+}
+/********** Medium **********/
+@media screen and (min-width: 601px){
+    #developer-name {
+        font-size: 48px;
+    }
+    #developer-function {
+        font-size: 32px;
+    }
+    #main-about h2, #main-skills-services h2, #main-achievements h2, #main-contact h2 {
+        font-size: 36px;
+    }
+    #skills-services h3 {
+        font-size: 28px;
+    }
+    #form-contact h3, #contact-details h3 {
+        font-size: 28px;
+    }
+    #form-contact {
+        margin: 0 40px;
+    }
+    #contact-details {
+        padding: 0 40px;
+    }
+}
+/********** Large **********/
+@media screen and (min-width: 992px){
+    #hard-skills, #soft-skills, #services {
+        padding-left: 40px;
+    }
+    figure {
+        margin: 20px 40px;
+    }
+    #form-contact {
+        margin: 0 60px;
+    }
+    #contact-details {
+        padding: 0 60px;
+    }
 }

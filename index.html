@@ -3,8 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pour vos créations de sites internet, applications, refonte de sites web, optimisation de référencement,
+    faites appel à Nicolas Coureau développeur web et application.">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Développeur Web/Application Frontend freelance à Dax - Nicolas Coureau"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.nicolas-coureau.fr"/>
+    <meta property="og:image" content="https://nicolas-coureau.fr/img/site-nicolas-coureau-og.png"/>
+    <meta property="og:description" content="Pour vos créations de sites internet, applications, refonte de sites web, optimisation de référencement,
+    faites appel à Nicolas Coureau développeur web et application."/>
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@nicolas-coureau" />
+    <meta name="twitter:url" content="https://nicolas-coureau.fr">
+    <meta name="twitter:title" content="Développeur Web/Application Frontend freelance à Dax - Nicolas Coureau">
+    <meta name="twitter:description" content="Pour vos créations de sites internet, applications, refonte de sites web, optimisation de référencement,
+    faites appel à Nicolas Coureau développeur web et application.">
+    <!-- Twitter Summary card images must be at least 200x200px -->
+    <meta name="twitter:image" content="https://nicolas-coureau.fr/img/site-nicolas-coureau-tc.png">
+
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <title>Nicolas Coureau - Développeur Frontend</title>
+    <title>Développeur Web/Application Frontend freelance à Dax - Nicolas Coureau</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
           integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -19,7 +40,7 @@
             <!-- Name in the menu bar -->
             <div id="my-name" class="w3-left">
                 <a href="index.html">
-                    <div class="w3-leftbar">
+                    <div id="main-my-name" class="w3-leftbar">
                         <h2 class="w3-margin-left">Nicolas Coureau</h2>
                         <h5 class="w3-margin-left">Développeur Frontend</h5>
                     </div>
@@ -38,24 +59,24 @@
             </nav>
             <!-- Hide right-floated links on small and medium screens and replace them with a menu icon -->
             <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
-                <i class="fa fa-bars w3-xxxlarge"></i>
+                <i class="fa fa-bars w3-xxlarge"></i>
             </a>
         </div>
 
         <!-- Sidebar on small and medium screens when clicking the menu icon -->
         <nav class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
             <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Fermer &times;</a>
-            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge"><i class="fas fa-home"></i></a>
-            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">A propos</a>
-            <a href="#skills-services" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">Compétences/Prestations</a>
-            <a href="#achievements" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">Réalisations</a>
-            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-xlarge">Contact</a>
+            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-large"><i class="fas fa-home"></i></a>
+            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-large">A propos</a>
+            <a href="#skills-services" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Compétences/Prestations</a>
+            <a href="#achievements" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Réalisations</a>
+            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Contact</a>
         </nav>
 
         <div id="title">
             <div id="main-title" class="w3-center ml15">
-                <h1 id="developer-name" class="w3-xxxlarge word">Nicolas Coureau</h1>
-                <h2 id="developer-function" class="word">Développeur Web/Application Frontend</h2>
+                <h2 id="developer-name" class="word">Nicolas Coureau</h2>
+                <h1 id="developer-function" class="word">Développeur Web/Application Frontend</h1>
             </div>
         </div>
     </header>
@@ -63,7 +84,7 @@
         <!-- About section -->
         <section id="about" class="w3-container">
             <div id="main-about">
-                <h2 class="w3-center w3-xxlarge w3-padding-24">Qui suis-je ?</h2>
+                <h2 class="w3-center w3-padding-24">Qui suis-je ?</h2>
                 <p class="content-about">
                     Après plus de 20 ans passés dans le commerce de la distribution, mais passionné depuis des années par la
                     programmation informatique, j'ai décidé d'assouvir ma passion en faisant de la programmation mon métier.
@@ -84,7 +105,7 @@
         <!-- Section Skills and services -->
         <section id="skills-services" class="w3-container w3-row">
             <div id="main-skills-services">
-                <h2 class="w3-center w3-xxlarge w3-padding-16">Compétences / Prestations</h2>
+                <h2 class="w3-center w3-padding-16">Compétences / Prestations</h2>
                 <div id="hard-skills" class="w3-container w3-third">
                     <div class="w3-padding w3-border w3-border-white w3-round-large">
                         <h3 class="w3-center">Hard-skills</h3>
@@ -120,7 +141,7 @@
                         <ul>
                             <li>Création de sites vitrines / Boutique en ligne (WordPress) / Applications web:
                                 <ul>
-                                    <li class="pl">From scratch</li>
+                                    <li class="pl">A partir de zéro</li>
                                     <li class="pl">Utilisation de CMS (WordPress)</li>
                                     <li class="pl">Intégration de maquettes</li>
                                 </ul>
@@ -149,35 +170,35 @@
         <!-- Achievements section -->
         <section id="achievements" class="w3-container">
             <div id="main-achievements">
-                <h2 class="w3-center w3-xxlarge w3-padding-16">Mes réalisations</h2>
+                <h2 class="w3-center w3-padding-16">Mes réalisations</h2>
                 <div class="w3-row">
                     <div class="w3-third">
                         <figure class="w3-container w3-white w3-padding-16">
-                            <img id="img-1" src="img/la-fourchette-min.png" alt="Site La Fourchette">
+                            <img id="img-1"  src="img/la-fourchette-min-min.png" alt="Site La Fourchette">
                             <figcaption>
                                 <h5>HTML5/CSS3</h5>
                                 <p>Site vitrine fictif pour un restaurant</p><br>
-                                <a href="http://la-fourchette.nicolas-coureau.fr" class="w3-button w3-black">Voir le site</a>
+                                <a href="http://la-fourchette.nicolas-coureau.fr" target="_blank" class="w3-button w3-black">Voir le site</a>
                             </figcaption>
                         </figure>
                     </div>
                     <div class="w3-third">
                         <figure class="w3-container w3-white w3-padding-16">
-                            <img id="img-2"  src="img/institut-recherche-environnement-min.png" alt="Site Institut Recherche Environnement">
+                            <img id="img-2"  src="img/institut-recherche-environnement-min-min.png" alt="Site Institut Recherche Environnement">
                             <figcaption>
                                 <h5>HTML5/CSS3</h5>
                                 <p>Site vitrine fictif pour un institut de recherche</p>
-                                <a href="http://institut-recherche-environnement.nicolas-coureau.fr" class="w3-button w3-black">Voir le site</a>
+                                <a href="http://institut-recherche-environnement.nicolas-coureau.fr" target="_blank" class="w3-button w3-black">Voir le site</a>
                             </figcaption>
                         </figure>
                     </div>
                     <div class="w3-third">
                         <figure class="w3-container w3-white w3-padding-16">
-                            <img id="img-3"  src="img/le-globule-min.png" alt="Site Le Globule">
+                            <img id="img-3"  src="img/le-globule-min-min.png" alt="Site Le Globule">
                             <figcaption>
                                 <h5>HTML5/CSS3</h5>
                                 <p>Site fictif pour le travail de mise en page</p><br>
-                                <a href="http://le-globule.nicolas-coureau.fr" class="w3-button w3-black">Voir le site</a>
+                                <a href="http://le-globule.nicolas-coureau.fr" target="_blank" class="w3-button w3-black">Voir le site</a>
                             </figcaption>
                         </figure>
                     </div>
@@ -185,31 +206,31 @@
                 <div class="w3-row">
                     <div class="w3-third">
                         <figure class="w3-container w3-white w3-padding-16">
-                            <img id="img-4"  src="img/le-site-web-min.png" alt="Site Le Site Web">
+                            <img id="img-4"  src="img/le-site-web-min-min.png" alt="Site Le Site Web">
                             <figcaption>
                                 <h5>HTML5/CSS3</h5>
                                 <p>Site fictif pour le travail de mise en page</p><br>
-                                <a href="http://le-site-web.nicolas-coureau.fr" class="w3-button w3-black">Voir le site</a>
+                                <a href="http://le-site-web.nicolas-coureau.fr" target="_blank" class="w3-button w3-black">Voir le site</a>
                             </figcaption>
                         </figure>
                     </div>
                     <div class="w3-third">
                         <figure class="w3-container w3-white w3-padding-16">
-                            <img id="img-5"  src="img/le-poussin-min.png" alt="Site Le Poussin">
+                            <img id="img-5"  src="img/le-poussin-min-min.png" alt="Site Le Poussin">
                             <figcaption>
                                 <h5>HTML5/CSS3</h5>
-                                <p>Site fictif pour la mise en page responsive</p>
-                                <a href="http://le-poussin.nicolas-coureau.fr" class="w3-button w3-black">Voir le site</a>
+                                <p>Site fictif pour la mise en page responsive</p><br>
+                                <a href="http://le-poussin.nicolas-coureau.fr" target="_blank" class="w3-button w3-black">Voir le site</a>
                             </figcaption>
                         </figure>
                     </div>
                     <div class="w3-third">
                         <figure class="w3-container w3-white w3-padding-16">
-                            <img id="img-6"  src="img/chalets-et-caviar-min.png" alt="Site Agence chalets et caviar">
+                            <img id="img-6"  src="img/chalets-et-caviar-min-min.png" alt="Site Agence chalets et caviar">
                             <figcaption>
                                 <h5>WordPress</h5>
                                 <p>Site vitrine fictif d'une agence de locations/ventes de chalets de luxe</p>
-                                <a href="https://agence-chaletsetcaviar.com" class="w3-button w3-black">Voir le site</a>
+                                <a href="https://agence-chaletsetcaviar.com" target="_blank" class="w3-button w3-black">Voir le site</a>
                             </figcaption>
                         </figure>
                     </div>
@@ -217,31 +238,31 @@
                 <div class="w3-row">
                     <div class="w3-third">
                         <figure class="w3-container w3-white w3-padding-16">
-                            <img id="img-7"  src="img/les-films-de-plein-air-min.png" alt="Site Les films de plein air">
+                            <img id="img-7"  src="img/les-films-de-plein-air-min-min.png" alt="Site Les films de plein air">
                             <figcaption>
                                 <h5>HTML5/CSS3/W3-CSS</h5>
                                 <p>Site vitrine fictif d'une association pour un festival de films de plein air</p>
-                                <a href="http://lesfilmsdepleinair.nicolas-coureau.fr/" class="w3-button w3-black">Voir le site</a>
+                                <a href="http://lesfilmsdepleinair.nicolas-coureau.fr/" target="_blank" class="w3-button w3-black">Voir le site</a>
                             </figcaption>
                         </figure>
                     </div>
                     <div class="w3-third">
                         <figure class="w3-container w3-white w3-padding-16">
-                            <img id="img-8"  src="img/un-generateur-de-citations-min.png" alt="Site Un générateur de citations">
+                            <img id="img-8"  src="img/un-generateur-de-citations-min-min.png" alt="Site Un générateur de citations">
                             <figcaption>
                                 <h5>HTML5/CSS3/Javascript</h5>
                                 <p>Générateur de citations aléatoires à partir de différents morceaux de phrases</p>
-                                <a href="http://un-generateur-de-citations.nicolas-coureau.fr" class="w3-button w3-black">Voir le site</a>
+                                <a href="http://un-generateur-de-citations.nicolas-coureau.fr" target="_blank" class="w3-button w3-black">Voir le site</a>
                             </figcaption>
                         </figure>
                     </div>
                     <div class="w3-third">
                         <figure class="w3-container w3-white w3-padding-16">
-                            <img id="img-9"  src="img/jeu-plateau-min.png" alt="Site Jeu de plateau">
+                            <img id="img-9"  src="img/jeu-plateau-min-min.png" alt="Site Jeu de plateau">
                             <figcaption>
                                 <h5>HTML5/CSS3/Javascript/jQuery</h5>
                                 <p>Jeu de plateau au tour par tour en javascript</p>
-                                <a href="http://jeu-plateau.nicolas-coureau.fr" class="w3-button w3-black">Voir le site</a>
+                                <a href="http://jeu-plateau.nicolas-coureau.fr" target="_blank" class="w3-button w3-black">Voir le site</a>
                             </figcaption>
                         </figure>
                     </div>
@@ -249,11 +270,11 @@
                 <div class="w3-row">
                     <div class="w3-third">
                         <figure class="w3-container w3-white w3-padding-16">
-                            <img id="img-10"  src="img/avis-restaurants-min.png" alt="Site Avis de restaurants">
+                            <img id="img-10"  src="img/avis-restaurants-min-min.png" alt="Site Avis de restaurants">
                             <figcaption>
                                 <h5>HTML5/CSS3/Javascript/API</h5>
                                 <p>Site d'avis de restaurants géolocalisés, à l'aide d'API externes</p>
-                                <a href="http://avis-restaurants.nicolas-coureau.fr" class="w3-button w3-black">Voir le site</a>
+                                <a href="http://avis-restaurants.nicolas-coureau.fr" target="_blank" class="w3-button w3-black">Voir le site</a>
                             </figcaption>
                         </figure>
                     </div>
@@ -265,7 +286,7 @@
         <!-- Contact section -->
         <section id="contact">
             <div id="main-contact" class="w3-container">
-                <h2 class="w3-center w3-xxlarge w3-padding-16">Contact</h2>
+                <h2 class="w3-center w3-padding-16">Contact</h2>
                 <div class="w3-half">
                     <form id="form-contact" action="https://formspree.io/f/xoqpnjll" method="POST">
                         <h3 class="w3-center">Demande de contact</h3>
@@ -295,9 +316,10 @@
                             <i class="fas fa-envelope"></i> <a href="mailto:contact@nicolas-coureau.fr" class="mailto">contact@nicolas-coureau.fr</a>
                         </div>
                         <div id="social-network-icons" class="w100 w3-xlarge w3-center">
-                            <a href="https://www.linkedin.com/in/nicolas-coureau-a4a3a618b/"><i class="fab fa-linkedin w3-margin-right"></i></a>
-                            <a href="#"><i class="fab fa-facebook-square w3-margin-right"></i></a>
-                            <a href="https://github.com/Magestak"><i class="fab fa-github-square"></i></a>
+                            <a href="https://www.linkedin.com/in/nicolas-coureau-a4a3a618b/" target="_blank"><i class="fab fa-linkedin w3-margin-right"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-facebook-square w3-margin-right"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-twitter-square w3-margin-right"></i></a>
+                            <a href="https://github.com/Magestak" target="_blank"><i class="fab fa-github-square"></i></a>
                         </div>
                     </div>
                 </div>
@@ -310,8 +332,8 @@
     <!-- Footer -->
     <footer id="main-footer" class="w3-container w3-black w3-padding-16">
         <div class="w3-stretch w3-center">
-            <p class="w3-small">Copyright 2020 - <a href="html/mentions-legales.html">Mentions légales</a> - Site réalisé par
-                <a href="https://www.nicolas-coureau.fr/">Nicolas Coureau</a></p>
+            <p class="w3-small">Copyright 2020 - <a href="html/mentions-legales.html" target="_blank">Mentions légales</a> - Site réalisé par
+                <a href="https://www.nicolas-coureau.fr/" target="_blank">Nicolas Coureau</a></p>
         </div>
     </footer>
 
