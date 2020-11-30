@@ -20,11 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e31b209-599c-4336-9b3e-01470def0cb5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/avis-restaurants-min-min.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/chalets-et-caviar-min-min.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/institut-recherche-environnement-min-min.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/jeu-plateau-min-min.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/la-fourchette-min-min.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/le-globule-min-min.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/le-poussin-min-min.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/le-site-web-min-min.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/les-films-de-plein-air-min-min.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/site-nicolas-coureau-og-min.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/site-nicolas-coureau-tc-min.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/un-generateur-de-citations-min-min.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/mentions-legales.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/mentions-legales.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,11 +45,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1keYyGSj9fWiEzaVckiuBl8RarE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -82,6 +96,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="586" y="198" key="#Inspections" timestamp="1606087348176">
