@@ -14,11 +14,17 @@ body {
 img {
     width: 100%;
 }
+iframe {
+    width: 100%;
+}
 #wrapper {
     margin: 0 auto;
     max-width: 2000px;
     color: white;
     background: linear-gradient(to right,  rgb(32, 34, 83), rgb(138, 21, 18));
+}
+.underline {
+    text-decoration: underline;
 }
 
 /********** Header **********/
@@ -53,13 +59,16 @@ img {
     max-width: 1280px;
 }
 .content-about {
-    font-size: 16px;
+    text-align: justify;
 }
 
 /********** Skills and services **********/
 #skills-services {
     padding-top: 40px;
     padding-bottom: 70px;
+}
+#skills-services h3 {
+    text-decoration: underline;
 }
 #main-skills-services {
     margin: 0 auto;
@@ -83,6 +92,9 @@ img {
     margin: 0 auto;
     max-width: 1280px;
 }
+#main-achievements h4 {
+    text-decoration: underline;
+}
 #main-achievements figure a {
     margin-top: 10px;
 }
@@ -102,6 +114,9 @@ figcaption {
 #main-contact h2 {
     margin-bottom: 30px;
 }
+#main-form {
+    margin-top: 100px;
+}
 #form-contact {
     padding: 0 20px 20px 20px;
     border: 1px solid white;
@@ -120,7 +135,9 @@ figcaption {
     border: 1px solid white;
     border-radius: 8px;
     padding: 0 20px 20px 20px;
-    margin-top: 100px;
+}
+#main-contact-map {
+    padding-top: 16px;
 }
 .w100 {
     width: 100%;
@@ -152,7 +169,7 @@ figcaption {
     #main-my-name h2 {
         font-size: 20px;
     }
-    #main-my-name h5 {
+    #main-my-name h3 {
         font-size: 16px;
     }
     #developer-name {
@@ -173,6 +190,12 @@ figcaption {
     #main-skills-services li {
         font-size: 16px;
     }
+    #main-achievements h3, #main-achievements h4, #main-achievements li{
+        font-size: 16px;
+    }
+    #main-achievements p {
+        font-size: 14px;
+    }
     figure {
         margin: 20px 10px;
     }
@@ -183,6 +206,9 @@ figcaption {
 
 /********** Medium **********/
 @media screen and (min-width: 601px) {
+    #main-my-name h3 {
+        font-size: 20px;
+    }
     #developer-name {
         font-size: 42px;
     }
@@ -192,13 +218,16 @@ figcaption {
     #main-about h2, #main-skills-services h2, #main-achievements h2, #main-contact h2 {
         font-size: 32px;
     }
+    #main-skills-services li {
+        font-size: 14px;
+    }
     figure {
         margin: 20px 20px;
     }
     .pl {
         padding-left: 20px;
     }
-    #main-achievements h5 {
+    #main-achievements h3, #main-achievements h4, #main-achievements li{
         font-size: 14px;
     }
     #main-achievements p {
@@ -238,7 +267,10 @@ figcaption {
     #hard-skills, #soft-skills, #services {
         padding-left: 20px;
     }
-    #main-achievements h5 {
+    #main-skills-services li {
+        font-size: 16px;
+    }
+    #main-achievements h3, #main-achievements h4, #main-achievements li{
         font-size: 18px;
     }
     #main-achievements p {
