@@ -60,6 +60,17 @@ iframe {
 }
 .content-about {
     text-align: justify;
+    margin-bottom: 10px;
+}
+.strong {
+    font-weight: bolder;
+}
+.link {
+    color: red;
+    font-weight: bolder;
+}
+.link:hover {
+    color: rgb(32, 34, 83);
 }
 
 /********** Skills and services **********/
@@ -125,7 +136,6 @@ figcaption {
 #form-contact input, textarea {
     margin-top: 15px;
     margin-bottom: 15px;
-    width: 100%;
 }
 #form-contact button {
     margin-top: 15px;
@@ -142,16 +152,26 @@ figcaption {
 .w100 {
     width: 100%;
 }
-.mailto:hover {
+.mailto:hover, #social-network-icons a:hover {
     color: rgb(32, 34, 83);
 }
+/*
 #social-network-icons a:hover {
     color: rgb(32, 34, 83);
+}*/
+.w10 {
+    width: 10%;
+}
+.w90 {
+    width: 90%;
 }
 
 /********** Footer **********/
-#main-footer a {
+#main-footer a, #main-form a {
     text-decoration: underline;
+}
+#main-footer a:hover, #main-form a:hover {
+    color: rgb(32, 34, 83);
 }
 
 /********** legal-notices **********/
